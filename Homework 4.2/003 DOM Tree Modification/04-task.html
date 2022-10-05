@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        td, th {
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        "use strict";
+        /*
+        Задание:
+        Создайте таблицу (table, tr, td) на основе массива объектов с именем source. Каждый объект - отдельная строка таблицы. Свойство month - значение для первой колонок.
+        Свойство amont - значение для второй колонки.
+        */
+
+        let source = [
+            {
+                month: "Январь",
+                amount: 20
+            },
+            {
+                month: "Февраль",
+                amount: 140
+            },
+            {
+                month: "Март",
+                amount: 115
+            },
+            {
+                month: "Апрель",
+                amount: 100
+            },
+            {
+                month: "Март",
+                amount: 80
+            },
+            {
+                month: "Июнь",
+                amount: 90
+            },
+            {
+                month: "Июль",
+                amount: 100
+            }
+        ];
+        function createTable() {
+            let table = document.createElement("table");
+            document.body.append(table);
+
+            source.forEach((mon) => {
+            let newTr = document.createElement("tr");
+            table.append(newTr);   
+            let newTd = document.createElement("td");
+            newTd.textContent = mon.month;
+            newTr.append(newTd);   
+
+            newTd = document.createElement("td");
+            newTd.textContent = mon.amount;
+            newTr.append(newTd);   
+
+            });
+        }
+        createTable();  
+    
+    </script>
+</body>
+
+</html>

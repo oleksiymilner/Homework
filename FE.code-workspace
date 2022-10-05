@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "../FE"
+		},
+		{
+			"name": "GitLesson2",
+			"path": "../FE/Git/GitLesson2"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "FE"
+	}
+}

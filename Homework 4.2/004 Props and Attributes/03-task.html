@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 03</title>
+</head>
+
+<body>
+    <div>Div 1</div>
+    <div data-remove>Div 2</div>
+    <div>Div 3</div>
+    <div data-remove>Div 4</div>
+
+    <script>
+        "use strict";
+        /*
+        Задание:
+        Напишите сценарий, который удалит на странице элементы с атрибутом data-remove
+        */
+        const containers = document.querySelectorAll("div");
+        containers.forEach(container => {
+          if (container.getAttribute("data-remove") !== null )
+          {
+            container.remove();
+          }  
+          
+});
+
+        
+    </script>
+</body>
+
+</html>
